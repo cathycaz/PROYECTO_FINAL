@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import plotly.graph_objects as go
 import yfinance as yf
-import pandas_datareader.data as web
 import datetime as dt
 from tensorflow.keras.models import load_model
 import pickle
@@ -91,8 +90,19 @@ df_etf = df_etf.rename(columns={'Close': etf_ticker})
 # Normalizar fechas del ETF objetivo antes de cualquier join
 df_etf = normalize_index(df_etf)
 
-exog_vars_fred = ['DGS10','DGS2','VIXCLS']
-data_exog_fred = web.DataReader(exog_vars_fred, 'fred', start=date_inicio, end=date_hoy)
+# Obtener datos de FRED usando alternativa (cargar desde CSV del dataset)
+try:
+    dataset_path = 'DataSet_General/DATASET_LIMPIO_E_IMPUTADO.csv'
+    if os.path.exists(dataset_path):
+        df_dataset = pd.read_csv(dataset_path, index_col=0, parse_dates=True)
+        exog_vars_fred = ['DGS10','DGS2','VIXCLS']
+        data_exog_fred = df_dataset[exog_vars_fred].loc[date_inicio:date_hoy]
+    else:
+        # Si no existe el CSV, crear DataFrame vacío con las columnas necesarias
+        data_exog_fred = pd.DataFrame(columns=['DGS10','DGS2','VIXCLS'])
+except Exception as e:
+    st.error(f"Error al cargar datos de FRED: {e}")
+    data_exog_fred = pd.DataFrame(columns=['DGS10','DGS2','VIXCLS'])
 
 activos_exogenos = ['GC=F','CL=F','DX-Y.NYB','^SPGSCI','^DJT','HG=F','^VXN']
 data_exog_yf = pd.DataFrame()
@@ -266,7 +276,7 @@ fig.update_layout(
     plot_bgcolor='rgba(0,0,0,0)',
     margin=dict(l=20, r=20, t=20, b=20),
     xaxis=dict(title='Fecha', gridcolor='#30363d'),
-    yaxis=dict(title='Valor estimado inversión', gridcolor='#30363d'),
+   yaxis=dict(title='Valor estimado inversión', gridcolor='#30363d'),
     height=400,
     showlegend=False
 )
@@ -289,3 +299,9 @@ fig2.update_layout(
     showlegend=False
 )
 st.plotly_chart(fig2, use_container_width=True)
+
+graphics = st.button("Ver Gráficos", use_container_width=True)
+if graphics:
+    st.success(f"📊 Redirigiendo a la página de gráficos sobre Métricas de Evaluación...")
+    st.switch_page('pages/Page_3.py')
+
