@@ -49,7 +49,7 @@ try:
     nombres_etfs = ['SPY', 'DIA', 'QQQ', 'XLK', 'IWV']
     
     # Colores para valores reales y predicciones
-    color_real = '#00d4ff'       # Cian para valores reales
+    color_real = "#0011ff"       # Cian para valores reales
     color_prediccion = "#c01515" # Rojo para predicciones
     
     # --- GRÁFICA 1: Comparación de valores reales vs predicciones ---

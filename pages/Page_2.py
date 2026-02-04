@@ -221,18 +221,18 @@ for i, pred in enumerate(predicciones):
     valor_estimado = monto * (pred[feature_cols.index(etf_ticker)] / X_input[0, -1, feature_cols.index(etf_ticker)])
     resultados.append({
         'Fecha': fechas_prediccion[i],
-        'Precio estimado': pred[feature_cols.index(etf_ticker)],
-        'Valor estimado inversión': valor_estimado
+        'Precio Estimado': pred[feature_cols.index(etf_ticker)],
+        'Valor Estimado Inversión': valor_estimado
     })
 df_resultados = pd.DataFrame(resultados)
 
 # Analizar oportunidad de inversión
-valor_minimo = df_resultados['Valor estimado inversión'].min()
-idx_minimo = df_resultados['Valor estimado inversión'].idxmin()
+valor_minimo = df_resultados['Valor Estimado Inversión'].min()
+idx_minimo = df_resultados['Valor Estimado Inversión'].idxmin()
 fecha_minima = df_resultados.loc[idx_minimo, 'Fecha']
 
 # Buscar si hay un valor mayor después del mínimo
-valores_posteriores = df_resultados.loc[idx_minimo+1:, 'Valor estimado inversión']
+valores_posteriores = df_resultados.loc[idx_minimo+1:, 'Valor Estimado Inversión']
 
 if not valores_posteriores.empty and valores_posteriores.max() > valor_minimo:
     # Hay oportunidad de ganancia
@@ -259,13 +259,13 @@ else:
 st.dataframe(df_resultados, use_container_width=True, hide_index=True)
 
 # Visualización de resultados
-st.subheader("Proyección de la inversión (5 días)")
+st.subheader("Proyección de la Inversión (5 días)")
 fig = go.Figure()
 fig.add_trace(go.Scatter(
     x=df_resultados['Fecha'],
-    y=df_resultados['Valor estimado inversión'],
+    y=df_resultados['Valor Estimado Inversión'],
     mode='lines+markers',
-    name='Valor estimado inversión',
+    name='Valor Estimado Inversión',
     line=dict(color='#3b82f6', width=4),
     marker=dict(size=10, color='#3b82f6', line=dict(color='white', width=2)),
     fill='tozeroy',
@@ -276,31 +276,31 @@ fig.update_layout(
     plot_bgcolor='rgba(0,0,0,0)',
     margin=dict(l=20, r=20, t=20, b=20),
     xaxis=dict(title='Fecha', gridcolor='#30363d'),
-   yaxis=dict(title='Valor estimado inversión', gridcolor='#30363d'),
+   yaxis=dict(title='Valor Estimado Inversión', gridcolor='#30363d'),
     height=400,
     showlegend=False
 )
 st.plotly_chart(fig, use_container_width=True)
 
-st.subheader("Precio estimado del ETF (5 días)")
+st.subheader("Precio Estimado del ETF (5 días)")
 fig2 = go.Figure()
 fig2.add_trace(go.Bar(
     x=df_resultados['Fecha'],
-    y=df_resultados['Precio estimado'],
+    y=df_resultados['Precio Estimado'],
     marker_color='#636efa',
-    name='Precio estimado'
+    name='Precio Estimado'
 ))
 fig2.update_layout(
     paper_bgcolor='rgba(0,0,0,0)',
     plot_bgcolor='rgba(0,0,0,0)',
     xaxis=dict(title='Fecha'),
-    yaxis=dict(title='Precio estimado'),
+    yaxis=dict(title='Precio Estimado'),
     height=350,
     showlegend=False
 )
 st.plotly_chart(fig2, use_container_width=True)
 
-graphics = st.button("Ver Gráficos", use_container_width=True)
+graphics = st.button("📊 Ver Gráficos", use_container_width=True)
 if graphics:
     st.success(f"📊 Redirigiendo a la página de gráficos sobre Métricas de Evaluación...")
     st.switch_page('pages/Page_3.py')
