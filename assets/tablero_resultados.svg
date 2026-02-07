@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <rect width="1200" height="675" fill="#fff4dd"/>
+  <rect x="40" y="40" width="1120" height="595" rx="28" fill="#ffffff" stroke="#e6dfcf" stroke-width="4"/>
+  <text x="600" y="150" text-anchor="middle" font-family="Fira Sans, Trebuchet MS, Segoe UI, sans-serif" font-size="50" fill="#0b5d57">Tablero de resultados</text>
+
+  <rect x="180" y="230" width="840" height="380" fill="#f7f3ea" stroke="#e6dfcf"/>
+  <line x1="200" y1="290" x2="1000" y2="290" stroke="#e6dfcf"/>
+  <line x1="200" y1="350" x2="1000" y2="350" stroke="#e6dfcf"/>
+  <line x1="200" y1="410" x2="1000" y2="410" stroke="#e6dfcf"/>
+  <line x1="200" y1="470" x2="1000" y2="470" stroke="#e6dfcf"/>
+  <line x1="200" y1="530" x2="1000" y2="530" stroke="#e6dfcf"/>
+  <line x1="200" y1="590" x2="1000" y2="590" stroke="#e6dfcf"/>
+
+  <text x="240" y="270" font-family="Fira Sans, Trebuchet MS, Segoe UI, sans-serif" font-size="18" fill="#3b2f2f">ETF</text>
+  <text x="520" y="270" font-family="Fira Sans, Trebuchet MS, Segoe UI, sans-serif" font-size="18" fill="#3b2f2f">Dia 1</text>
+  <text x="760" y="270" font-family="Fira Sans, Trebuchet MS, Segoe UI, sans-serif" font-size="18" fill="#3b2f2f">Dia 5</text>
+
+  <text x="240" y="330" font-family="Fira Sans, Trebuchet MS, Segoe UI, sans-serif" font-size="18" fill="#0b5d57">SPY</text>
+  <text x="520" y="330" font-family="Fira Sans, Trebuchet MS, Segoe UI, sans-serif" font-size="18" fill="#3b2f2f">$647.76</text>
+  <text x="760" y="330" font-family="Fira Sans, Trebuchet MS, Segoe UI, sans-serif" font-size="18" fill="#3b2f2f">$654.02</text>
+
+  <text x="240" y="390" font-family="Fira Sans, Trebuchet MS, Segoe UI, sans-serif" font-size="18" fill="#0b5d57">QQQ</text>
+  <text x="520" y="390" font-family="Fira Sans, Trebuchet MS, Segoe UI, sans-serif" font-size="18" fill="#3b2f2f">$560.82</text>
+  <text x="760" y="390" font-family="Fira Sans, Trebuchet MS, Segoe UI, sans-serif" font-size="18" fill="#3b2f2f">$571.21</text>
+
+  <text x="240" y="450" font-family="Fira Sans, Trebuchet MS, Segoe UI, sans-serif" font-size="18" fill="#0b5d57">DIA</text>
+  <text x="520" y="450" font-family="Fira Sans, Trebuchet MS, Segoe UI, sans-serif" font-size="18" fill="#3b2f2f">$461.96</text>
+  <text x="760" y="450" font-family="Fira Sans, Trebuchet MS, Segoe UI, sans-serif" font-size="18" fill="#3b2f2f">$461.69</text>
+
+  <text x="240" y="510" font-family="Fira Sans, Trebuchet MS, Segoe UI, sans-serif" font-size="18" fill="#0b5d57">XLK</text>
+  <text x="520" y="510" font-family="Fira Sans, Trebuchet MS, Segoe UI, sans-serif" font-size="18" fill="#3b2f2f">$132.04</text>
+  <text x="760" y="510" font-family="Fira Sans, Trebuchet MS, Segoe UI, sans-serif" font-size="18" fill="#3b2f2f">$132.14</text>
+
+  <text x="240" y="570" font-family="Fira Sans, Trebuchet MS, Segoe UI, sans-serif" font-size="18" fill="#0b5d57">IWV</text>
+  <text x="520" y="570" font-family="Fira Sans, Trebuchet MS, Segoe UI, sans-serif" font-size="18" fill="#3b2f2f">$365.69</text>
+  <text x="760" y="570" font-family="Fira Sans, Trebuchet MS, Segoe UI, sans-serif" font-size="18" fill="#3b2f2f">$371.07</text>
+
+  <text x="600" y="640" text-anchor="middle" font-family="Fira Sans, Trebuchet MS, Segoe UI, sans-serif" font-size="20" fill="#6a5a4a">Ejemplo de tabla final para el usuario</text>
+</svg>

@@ -11,9 +11,6 @@ python -m venv .venv
 
 # Instalar dependencias
 pip install -r requirements.txt
-
-# Para pandas-datareader compatible con Python 3.13
-pip install git+https://github.com/pydata/pandas-datareader.git
 ```
 
 ## Próximas veces - Solo activar el entorno

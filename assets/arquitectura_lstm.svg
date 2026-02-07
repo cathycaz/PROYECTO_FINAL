@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <rect width="1200" height="675" fill="#fff4dd"/>
+  <rect x="40" y="40" width="1120" height="595" rx="28" fill="#ffffff" stroke="#e6dfcf" stroke-width="4"/>
+  <text x="600" y="150" text-anchor="middle" font-family="Fira Sans, Trebuchet MS, Segoe UI, sans-serif" font-size="50" fill="#0b5d57">Arquitectura LSTM</text>
+
+  <rect x="120" y="300" width="230" height="100" rx="12" fill="#0b5d57"/>
+  <rect x="485" y="300" width="230" height="100" rx="12" fill="#f0a202"/>
+  <rect x="850" y="300" width="230" height="100" rx="12" fill="#3b2f2f"/>
+
+  <text x="235" y="360" text-anchor="middle" font-family="Fira Sans, Trebuchet MS, Segoe UI, sans-serif" font-size="22" fill="#ffffff">Entrada</text>
+  <text x="600" y="360" text-anchor="middle" font-family="Fira Sans, Trebuchet MS, Segoe UI, sans-serif" font-size="22" fill="#ffffff">LSTM</text>
+  <text x="965" y="360" text-anchor="middle" font-family="Fira Sans, Trebuchet MS, Segoe UI, sans-serif" font-size="22" fill="#ffffff">Salida</text>
+
+  <line x1="350" y1="350" x2="485" y2="350" stroke="#0b5d57" stroke-width="6"/>
+  <polygon points="485,350 470,342 470,358" fill="#0b5d57"/>
+  <line x1="715" y1="350" x2="850" y2="350" stroke="#0b5d57" stroke-width="6"/>
+  <polygon points="850,350 835,342 835,358" fill="#0b5d57"/>
+
+  <text x="235" y="430" text-anchor="middle" font-family="Fira Sans, Trebuchet MS, Segoe UI, sans-serif" font-size="18" fill="#3b2f2f">30 dias x 15 vars</text>
+  <text x="600" y="430" text-anchor="middle" font-family="Fira Sans, Trebuchet MS, Segoe UI, sans-serif" font-size="18" fill="#3b2f2f">aprende patrones</text>
+  <text x="965" y="430" text-anchor="middle" font-family="Fira Sans, Trebuchet MS, Segoe UI, sans-serif" font-size="18" fill="#3b2f2f">predice 5 ETFs</text>
+</svg>

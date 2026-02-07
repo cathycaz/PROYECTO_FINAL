@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="650" viewBox="0 0 1400 650">
+  <!-- Fondo -->
+  <rect width="1400" height="650" fill="#000000"/>
+  
+  <!-- Línea conectora central -->
+  <line x1="85" y1="320" x2="1315" y2="320" stroke="#666" stroke-width="4" stroke-dasharray="8,8"/>
+  
+  <!-- Flechas entre pasos -->
+  <defs>
+    <marker id="arrowhead" markerWidth="12" markerHeight="12" refX="10" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#999" />
+    </marker>
+  </defs>
+  
+  <line x1="240" y1="320" x2="290" y2="320" stroke="#999" stroke-width="5" marker-end="url(#arrowhead)"/>
+  <line x1="470" y1="320" x2="520" y2="320" stroke="#999" stroke-width="5" marker-end="url(#arrowhead)"/>
+  <line x1="700" y1="320" x2="750" y2="320" stroke="#999" stroke-width="5" marker-end="url(#arrowhead)"/>
+  <line x1="930" y1="320" x2="980" y2="320" stroke="#999" stroke-width="5" marker-end="url(#arrowhead)"/>
+  <line x1="1160" y1="320" x2="1210" y2="320" stroke="#999" stroke-width="5" marker-end="url(#arrowhead)"/>
+  
+  <!-- ==================== PASO 1: DATOS ==================== -->
+  <circle cx="150" cy="320" r="90" fill="#f0a202" stroke="#e67e22" stroke-width="4"/>
+  <!-- Número -->
+  <circle cx="85" cy="240" r="38" fill="#e67e22"/>
+  <text x="85" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#fff">1</text>
+  <!-- Icono más grande -->
+  <polyline points="120,340 150,320 180,340 220,290 250,340" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+  <line x1="120" y1="365" x2="250" y2="365" stroke="#fff" stroke-width="5"/>
+  <!-- Texto muy grande -->
+  <text x="150" y="460" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#00ff88">DATOS</text>
+  <text x="150" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" fill="#e0e0e0">Recopilación</text>
+  <text x="150" y="520" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" fill="#e0e0e0">Integración</text>
+  <text x="150" y="545" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" fill="#e0e0e0">Validación</text>
+  
+  <!-- ==================== PASO 2: LIMPIEZA ==================== -->
+  <circle cx="380" cy="320" r="90" fill="#3498db" stroke="#2980b9" stroke-width="4"/>
+  <!-- Número -->
+  <circle cx="315" cy="240" r="38" fill="#2980b9"/>
+  <text x="315" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#fff">2</text>
+  <!-- Icono más grande -->
+  <circle cx="350" cy="300" r="16" fill="none" stroke="#fff" stroke-width="4"/>
+  <line x1="350" y1="316" x2="420" y2="390" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+  <!-- Texto muy grande -->
+  <text x="380" y="460" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#00ff88">LIMPIEZA</text>
+  <text x="380" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" fill="#e0e0e0">Fechas faltantes</text>
+  <text x="380" y="520" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" fill="#e0e0e0">Outliers</text>
+  <text x="380" y="545" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" fill="#e0e0e0">Análisis univariante</text>
+  
+  <!-- ==================== PASO 3: IMPUTACIÓN ==================== -->
+  <circle cx="610" cy="320" r="90" fill="#ff7043" stroke="#f4511e" stroke-width="4"/>
+  <!-- Número -->
+  <circle cx="545" cy="240" r="38" fill="#f4511e"/>
+  <text x="545" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#fff">3</text>
+  <!-- Icono: gotero/relleno -->
+  <circle cx="610" cy="295" r="12" fill="none" stroke="#fff" stroke-width="3"/>
+  <rect x="603" y="315" width="14" height="30" fill="#fff" rx="2"/>
+  <polygon points="610,340 605,350 615,350" fill="#fff"/>
+  <!-- Texto muy grande -->
+  <text x="610" y="460" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#00ff88">IMPUTACIÓN</text>
+  <text x="610" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" fill="#e0e0e0">Forward fill</text>
+  <text x="610" y="520" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" fill="#e0e0e0">Backward fill</text>
+  <text x="610" y="545" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" fill="#e0e0e0">Verificación</text>
+  
+  <!-- ==================== PASO 4: MODELADO ==================== -->
+  <circle cx="840" cy="320" r="90" fill="#9b59b6" stroke="#8e44ad" stroke-width="4"/>
+  <!-- Número -->
+  <circle cx="775" cy="240" r="38" fill="#8e44ad"/>
+  <text x="775" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#fff">4</text>
+  <!-- Icono red neuronal más grande -->
+  <circle cx="800" cy="300" r="7" fill="#fff"/>
+  <circle cx="840" cy="300" r="7" fill="#fff"/>
+  <circle cx="880" cy="300" r="7" fill="#fff"/>
+  <line x1="800" y1="300" x2="840" y2="345" stroke="#fff" stroke-width="3"/>
+  <line x1="840" y1="300" x2="840" y2="345" stroke="#fff" stroke-width="3"/>
+  <line x1="880" y1="300" x2="840" y2="345" stroke="#fff" stroke-width="3"/>
+  <circle cx="840" cy="350" r="7" fill="#fff"/>
+  <!-- Texto muy grande -->
+  <text x="840" y="460" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#00ff88">MODELADO</text>
+  <text x="840" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" fill="#e0e0e0">LSTM</text>
+  <text x="840" y="520" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" fill="#e0e0e0">5 modelos</text>
+  
+  <!-- ==================== PASO 5: EVALUACIÓN ==================== -->
+  <circle cx="1070" cy="320" r="90" fill="#d32f2f" stroke="#b71c1c" stroke-width="4"/>
+  <!-- Número -->
+  <circle cx="1005" cy="240" r="38" fill="#b71c1c"/>
+  <text x="1005" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#fff">5</text>
+  <!-- Icono barras más grande -->
+  <rect x="1030" y="320" width="16" height="40" fill="#fff"/>
+  <rect x="1058" y="300" width="16" height="60" fill="#fff"/>
+  <rect x="1086" y="285" width="16" height="75" fill="#fff"/>
+  <rect x="1114" y="305" width="16" height="55" fill="#fff"/>
+  <line x1="1030" y1="360" x2="1130" y2="360" stroke="#fff" stroke-width="4"/>
+  <!-- Texto muy grande -->
+  <text x="1070" y="460" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#00ff88">EVALUACIÓN</text>
+  <text x="1070" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" fill="#e0e0e0">MAE, RMSE</text>
+  <text x="1070" y="520" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" fill="#e0e0e0">R², MAPE</text>
+  
+  <!-- ==================== PASO 6: ENTREGA ==================== -->
+  <circle cx="1300" cy="320" r="90" fill="#27ae60" stroke="#229954" stroke-width="4"/>
+  <!-- Número -->
+  <circle cx="1235" cy="240" r="38" fill="#229954"/>
+  <text x="1235" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#fff">6</text>
+  <!-- Icono caja más grande -->
+  <rect x="1250" y="285" width="100" height="70" fill="none" stroke="#fff" stroke-width="4" rx="5"/>
+  <line x1="1250" y1="310" x2="1350" y2="310" stroke="#fff" stroke-width="4"/>
+  <line x1="1300" y1="285" x2="1300" y2="355" stroke="#fff" stroke-width="4"/>
+  <!-- Texto muy grande -->
+  <text x="1300" y="460" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#00ff88">ENTREGA</text>
+  <text x="1300" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" fill="#e0e0e0">Predicciones</text>
+  <text x="1300" y="520" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" fill="#e0e0e0">5 días, 5 ETFs</text>
+</svg>
