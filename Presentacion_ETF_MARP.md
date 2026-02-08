@@ -180,9 +180,8 @@ Método de comprobación temporal que simula predicciones en tiempo real. El mod
 
 ---
 
-# Entrega de predicciones
+<img src="assets/tabla_predicciones.svg" alt="Tabla de predicciones" style="width:90%;margin:auto;display:block;background:#111;" />
 
-- 5 dias laborales
-- Resumen por ETF
-
-![Tablero de resultados](assets/tablero_resultados.svg)
+<div style="position: absolute; bottom: 30px; right: 60px; font-size: 1.1em; color: #00d4ff; text-align: right;">
+  <a href="https://predicciones-etfs.streamlit.app/" style="color: #00d4ff; text-decoration: underline;">https://predicciones-etfs.streamlit.app/</a>
+</div>
