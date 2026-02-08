@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="500" viewBox="0 0 1000 500">
+  <defs>
+    <style>
+      .bg { fill: #0e0d0c; }
+      .header-bg { fill: #00d4ff; }
+      .row-bg { fill: #1b1a18; }
+      .text-header { fill: #000000; font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 24px; font-weight: bold; text-anchor: middle; }
+      .text-data { fill: #ffffff; font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 22px; text-anchor: middle; }
+      .border { stroke: #3a3a3a; stroke-width: 2; fill: none; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1000" height="500" />
+  
+  <!-- Título -->
+  <text x="500" y="45" style="fill: #00d4ff; font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 32px; font-weight: bold; text-anchor: middle;">WALK-FORWARD CON FINE-TUNING</text>
+
+  <!-- Cabecera de tabla -->
+  <rect class="header-bg" x="150" y="90" width="200" height="50" />
+  <rect class="header-bg" x="350" y="90" width="200" height="50" />
+  <rect class="header-bg" x="550" y="90" width="180" height="50" />
+  <rect class="header-bg" x="730" y="90" width="120" height="50" />
+  
+  <text class="text-header" x="250" y="122">MAE</text>
+  <text class="text-header" x="450" y="122">RMSE</text>
+  <text class="text-header" x="640" y="122">MAPE (%)</text>
+  <text class="text-header" x="790" y="122">Pasos</text>
+
+  <!-- Fila de datos -->
+  <rect class="row-bg" x="150" y="140" width="200" height="50" />
+  <rect class="row-bg" x="350" y="140" width="200" height="50" />
+  <rect class="row-bg" x="550" y="140" width="180" height="50" />
+  <rect class="row-bg" x="730" y="140" width="120" height="50" />
+  
+  <text class="text-data" x="250" y="172">5.67</text>
+  <text class="text-data" x="450" y="172">7.42</text>
+  <text class="text-data" x="640" y="172">1.62</text>
+  <text class="text-data" x="790" y="172">50</text>
+
+  <!-- Bordes de tabla -->
+  <rect class="border" x="150" y="90" width="700" height="100" />
+  
+  <!-- Líneas verticales -->
+  <line class="border" x1="350" y1="90" x2="350" y2="190" />
+  <line class="border" x1="550" y1="90" x2="550" y2="190" />
+  <line class="border" x1="730" y1="90" x2="730" y2="190" />
+  
+  <!-- Línea horizontal -->
+  <line class="border" x1="150" y1="140" x2="850" y2="140" />
+
+  <!-- Descripción -->
+  <text x="500" y="270" style="fill: #ffffff; font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 18px; text-anchor: middle; line-height: 1.5;">
+    ✓ Usa modelos pre-entrenados (Día 1) como base para fine-tuning
+  </text>
+  
+  <text x="500" y="310" style="fill: #ffffff; font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 18px; text-anchor: middle;">
+    ✓ Ventaja: MÁS RÁPIDO que reentrenar desde cero
+  </text>
+  
+  <text x="500" y="350" style="fill: #ffffff; font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 18px; text-anchor: middle;">
+    ✓ Valida en 50 pasos del histórico de datos
+  </text>
+
+  <!-- Nota al pie -->
+  <text x="500" y="460" style="fill: #b0b0b0; font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 16px; text-anchor: middle;">
+    Método de validación que ajusta el modelo incrementalmente conforme nuevos datos llegan
+  </text>
+</svg>

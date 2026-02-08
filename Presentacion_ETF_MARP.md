@@ -1,6 +1,5 @@
 ---
 marp: true
-title: Flujo de Trabajo - Prediccion de ETFs
 paginate: true
 size: 16:9
 ---
@@ -61,12 +60,18 @@ size: 16:9
   }
   
   img {
-    max-width: 90%;
-    max-height: 60vh;
+    max-width: 95%;
+    max-height: 75vh;
     width: auto;
     height: auto;
     margin: 50px auto 0 auto;
     object-fit: contain;
+  }
+  
+  img.large {
+    max-width: 95%;
+    max-height: 70vh;
+    margin: 20px auto 0 auto;
   }
   
   .autores {
@@ -80,13 +85,11 @@ size: 16:9
   }
 </style>
 
+
 # CJC FINANZAS
-## Predicción de ETFs
 
 - Objetivo: Estimar precios a 5 días
 - Público: No técnico
-
-![Logo](logo.jpeg)
 
 <div class="autores">
 <strong>Autores:</strong><br>
@@ -94,6 +97,8 @@ Catherine Cazorla<br>
 Jesús Jiménez<br>
 Carlos Mairena
 </div>
+
+![Logo](logo.jpeg)
 
 ---
 
@@ -151,20 +156,27 @@ Carlos Mairena
 ---
 
 # Modelado (LSTM)
+- Modelos Directos por Día
+- Datos Recientes (5 años)
 
-- Modelos directos por dia
-- Datos recientes (5 anos)
-
-![Arquitectura simple](assets/arquitectura_lstm.svg)
+<img src="assets/mapa_mental_lstm.svg" class="large" alt="Mapa mental LSTM">
 
 ---
 
-# Evaluacion y validacion
+# Evaluación y Validación
 
-- MAE, RMSE, R², MAPE
-- Walk-forward y validacion cruzada
+- Un modelo LSTM por día (horizonte 1 a 5)
+- Métricas Obtenidas
 
-![Comparativa metricas](assets/metricas_etf.svg)
+<img src="assets/metricas_modelos_directos.svg" class="large" alt="Métricas modelos directos">
+
+---
+
+# Validación Walk-Forward
+
+Método de comprobación temporal que simula predicciones en tiempo real. El modelo se entrena con datos históricos y se valida en seguimiento incremental. Cada paso "camina hacia adelante" incorporando nuevos datos y re-entrenando
+
+<img src="assets/metricas_walk_forward.svg" class="large" alt="Métricas Walk-Forward">
 
 ---
 

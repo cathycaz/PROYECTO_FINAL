@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1350" viewBox="0 0 1600 900">
+  <defs>
+    <style>
+      .bg { fill: #0e0d0c; }
+      .panel { fill: #1b1a18; stroke: #3a3a3a; stroke-width: 2; rx: 18; }
+      .node { stroke: #ffffff; stroke-width: 2; rx: 14; }
+      .t { fill: #ffffff; font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 28px; text-anchor: middle; }
+      .t-small { fill: #ffffff; font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 22px; text-anchor: middle; }
+      .t-title { fill: #00d4ff; font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 34px; font-weight: bold; }
+      .line { stroke: #f7c948; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+    </style>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#f7c948" />
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1600" height="900" />
+
+  <!-- Left: Past -->
+  <rect class="panel" x="60" y="220" width="320" height="380" />
+  <text class="t-title" x="140" y="260">PASADO</text>
+  <rect class="node" x="95" y="310" width="250" height="240" fill="#17c964" />
+  <text class="t" x="220" y="405">Últimos 30 días</text>
+  <text class="t" x="220" y="445">ETFs + Exógenas</text>
+
+  <!-- Center: LSTM Brain -->
+  <rect class="panel" x="440" y="120" width="720" height="660" />
+  <text class="t-title" x="670" y="160">CEREBRO LSTM</text>
+
+  <rect class="node" x="500" y="240" width="260" height="90" fill="#3b82f6" />
+  <text class="t" x="630" y="280">Analiza patrones</text>
+  <text class="t" x="630" y="315">y tendencias</text>
+
+  <rect class="node" x="820" y="210" width="260" height="90" fill="#8b5cf6" />
+  <text class="t" x="950" y="250">Recuerda</text>
+  <text class="t" x="950" y="285">señales útiles</text>
+
+  <rect class="node" x="820" y="350" width="260" height="90" fill="#ef4444" />
+  <text class="t" x="950" y="405">Olvida ruido</text>
+
+  <rect class="node" x="640" y="470" width="320" height="90" fill="#f59e0b" />
+  <text class="t" x="800" y="510">Decide qué</text>
+  <text class="t" x="800" y="545">información usar</text>
+
+  <rect class="node" x="640" y="610" width="320" height="90" fill="#14b8a6" />
+  <text class="t" x="800" y="665">Genera predicción</text>
+
+  <!-- Right: Future -->
+  <rect class="panel" x="1220" y="240" width="320" height="340" />
+  <text class="t-title" x="1310" y="280">FUTURO</text>
+  <rect class="node" x="1250" y="330" width="260" height="210" fill="#f472b6" />
+  <text class="t" x="1380" y="385">Precios estimados</text>
+  <text class="t" x="1380" y="420">para 1 a 5 días</text>
+  <text class="t" x="1380" y="460">Un modelo por día</text>
+  <text class="t" x="1380" y="495">para las 5 ETFs</text>
+
+  <!-- Arrows -->
+  <path class="line" d="M380 410 C430 410, 460 410, 500 410" />
+  <path class="line" d="M760 285 C790 260, 800 255, 820 255" />
+  <path class="line" d="M760 305 C790 355, 800 365, 820 395" />
+  <path class="line" d="M1080 255 L1120 255 L1120 500 L960 500" />
+  <path class="line" d="M1080 395 L1140 395 L1140 540 L960 540" />
+  <path class="line" d="M800 560 C800 600, 800 610, 800 610" />
+  <path class="line" d="M960 655 C1100 655, 1180 540, 1250 470" />
+</svg>
